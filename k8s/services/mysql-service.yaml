@@ -7,6 +7,6 @@ spec:
     app: mysql
   ports:
     - protocol: TCP
-      port: 3306
-      targetPort: 3306
+      port: 3310      # Hizmetin dış dünyaya açık olduğu port
+      targetPort: 3306  # MySQL sunucusunun dinlediği port
   type: ClusterIP
