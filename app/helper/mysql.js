@@ -1,12 +1,12 @@
-const mysql = require("mysql2");
+const mysql = require('mysql2/promise');
 
-const connection = mysql.createPool({
-  host: "mysql-service", // 10.99.134.202
+const pool = mysql.createPool({
+  host: "mysql-service",
   user: "root",
   password: "password",
   database: "app",
   port: 3310,
-  connectTimeout: 100, // default connect timeout is 10 seconds
+  connectTimeout: 100,
 });
 
-module.exports = connection;
+module.exports = pool;

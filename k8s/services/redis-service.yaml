@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: redis
+  name: redis-service
 spec:
   selector:
-    app: redis-service
+    app: redis-server
   ports:
     - protocol: TCP
       port: 6379

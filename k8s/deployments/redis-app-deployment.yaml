@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: redis
-          image: redis-app:v16
+          image: redis-app:v31
           ports:
             - containerPort: 3000
       imagePullSecrets:
